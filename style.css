@@ -254,9 +254,23 @@ body {
     color: dimgrey;
 }
 
-@media screen and (max-width: 1200px) {
-    #footer_content {
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
     }
-}
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 50px;
+    }
+
+    .apresentacao__conteudo {
+        padding: 0 0 5%;
+        text-align: center;
+        width: auto;
+    }

@@ -57,7 +57,7 @@ body {
 
 .apresentacao_conteudo_titulo {
     font-size: 1.5rem;
-    font-family: var(--fonte-primaria)
+    font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque {
@@ -66,7 +66,7 @@ body {
 
 .apresentacao_conteudo_texto {
     font-size: 1.12rem;
-    font-family: var(--fonte-secundaria)
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -196,7 +196,11 @@ body {
     gap: 5px;
 }
 
-.footer-link .loc {
+.informações__de__contato {
+    padding: 6% 0 0;
+}
+
+.informações__de__contato .loc {
     padding: 0 1rem;
 }
 
@@ -245,7 +249,7 @@ body {
     justify-content: center;
     background-color: black;
     font-size: 0.9rem;
-    padding: 1.5rem;
+    padding: 0.60rem;
     font-weight: 100;
     color: dimgrey;
 }

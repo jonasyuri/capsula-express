@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #4D8B55;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #461e0a;
+    --cor-hover: #268852;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 12%;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    margin: 5% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 1.12rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.bloco__de__informacoes {
+    font-size: 1.12rem;
+    color: black;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 0.90rem;
+    font-weight: 500;
+    width: 100%;
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+#footer_content {
+    background-color: var(--cor-terciaria);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3.5rem;
+    gap: 50px;
+}
+
+#footer_contacts img {
+    padding: 0 0 2rem;
+    width: 250px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor-secundaria);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9207);
+}
+
+#facebook {
+    background: #4267b3;
+}
+
+#linkedin {
+    background-color: #0a66c2;
+}
+
+#whatsapp {
+    background: #25d366;
+}
+
+#youtube {
+    background-color: #f00;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    gap: 5px;
+}
+
+.informações__de__contato {
+    padding: 6% 0 0;
+}
+
+.informações__de__contato .loc {
+    padding: 0 1rem;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--cor-secundaria);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: var(--cor-primaria);
+    border: none;
+    color: var(--cor-secundaria);
+    padding: 0 1.5rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 0.60rem;
+    font-weight: 100;
+    color: dimgrey;
+}
+
+@media screen and (max-width: 1200px) {
+    #footer_content {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}

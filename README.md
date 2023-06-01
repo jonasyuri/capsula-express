@@ -1,4 +1,4 @@
-# Capsula Express
+# Cápsula Express
 
 > Status: Developing ⚠️
 
